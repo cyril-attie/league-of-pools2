@@ -1,0 +1,312 @@
+{
+  "contractName": "IPoolProviderFactory",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_underlyingAcceptedCurrency",
+          "type": "address"
+        }
+      ],
+      "name": "createPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "newPoolAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.7+commit.b8d736ae\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_underlyingAcceptedCurrency\",\"type\":\"address\"}],\"name\":\"createPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"newPoolAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IPoolProviderFactory.sol\":\"IPoolProviderFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/IPoolProviderFactory.sol\":{\"keccak256\":\"0x681d6e4723686dc7b8887e3466503c3ad5c00ddc5461021d38eeb5e9a4b32e4c\",\"urls\":[\"bzz-raw://fc1d94f2b05c47fa5c8b30bdc02f81c5b6eecf5c4d4cbb7c71eb650816969e4e\",\"dweb:/ipfs/QmTDpG4vPPbEFKHW54dceVkttyrLTpBpYxMoxJ45A2QK7d\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\n\ninterface IPoolProviderFactory {\n    function createPool(address _underlyingAcceptedCurrency) external returns (address newPoolAddress);\n}",
+  "sourcePath": "contracts/interfaces/IPoolProviderFactory.sol",
+  "ast": {
+    "absolutePath": "contracts/interfaces/IPoolProviderFactory.sol",
+    "exportedSymbols": {
+      "IPoolProviderFactory": [
+        3141
+      ]
+    },
+    "id": 3142,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3133,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3141,
+        "linearizedBaseContracts": [
+          3141
+        ],
+        "name": "IPoolProviderFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "9049f9d2",
+            "id": 3140,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3136,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3135,
+                  "mutability": "mutable",
+                  "name": "_underlyingAcceptedCurrency",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3140,
+                  "src": "91:35:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3134,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:37:25"
+            },
+            "returnParameters": {
+              "id": 3139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3138,
+                  "mutability": "mutable",
+                  "name": "newPoolAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3140,
+                  "src": "146:22:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3137,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "145:24:25"
+            },
+            "scope": 3141,
+            "src": "71:99:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3142,
+        "src": "34:138:25"
+      }
+    ],
+    "src": "0:172:25"
+  },
+  "legacyAST": {
+    "absolutePath": "contracts/interfaces/IPoolProviderFactory.sol",
+    "exportedSymbols": {
+      "IPoolProviderFactory": [
+        3141
+      ]
+    },
+    "id": 3142,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3133,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3141,
+        "linearizedBaseContracts": [
+          3141
+        ],
+        "name": "IPoolProviderFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "9049f9d2",
+            "id": 3140,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3136,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3135,
+                  "mutability": "mutable",
+                  "name": "_underlyingAcceptedCurrency",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3140,
+                  "src": "91:35:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3134,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:37:25"
+            },
+            "returnParameters": {
+              "id": 3139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3138,
+                  "mutability": "mutable",
+                  "name": "newPoolAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3140,
+                  "src": "146:22:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3137,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "145:24:25"
+            },
+            "scope": 3141,
+            "src": "71:99:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3142,
+        "src": "34:138:25"
+      }
+    ],
+    "src": "0:172:25"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.7+commit.b8d736ae.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-05-14T15:30:59.803Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

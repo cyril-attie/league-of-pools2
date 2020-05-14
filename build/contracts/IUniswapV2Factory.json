@@ -1,0 +1,1653 @@
+{
+  "contractName": "IUniswapV2Factory",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "underlyingAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "Pool",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "allPools",
+          "type": "uint256"
+        }
+      ],
+      "name": "PoolCreated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "feeTo",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeToSetter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_underlyingAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "Pool",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "allPools",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "Pool",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "allPoolsLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_underlyingAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_underlyingAcceptedCurrency",
+          "type": "address"
+        }
+      ],
+      "name": "createPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "Pool",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "setFeeTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "setFeeToSetter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.7+commit.b8d736ae\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"underlyingAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"Pool\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"allPools\",\"type\":\"uint256\"}],\"name\":\"PoolCreated\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"allPools\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"Pool\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"allPoolsLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_underlyingAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_underlyingAcceptedCurrency\",\"type\":\"address\"}],\"name\":\"createPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"Pool\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"feeTo\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"feeToSetter\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_underlyingAddress\",\"type\":\"address\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"Pool\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"setFeeTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"setFeeToSetter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/c/ethcommunity/league-of-pools/contracts/interfaces/ILOPFactory.sol\":\"IUniswapV2Factory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/c/ethcommunity/league-of-pools/contracts/interfaces/ILOPFactory.sol\":{\"keccak256\":\"0x75b7e674753a55455ef2950e07e950b287c17a0a66c5d69f93cf26610e06ab12\",\"urls\":[\"bzz-raw://b2e3071e0f2c9be8639021eb008ab0d21228c88de1f6d867038f5211b9d3d4fb\",\"dweb:/ipfs/QmRCqvG2t8jSdDuAmbkXvvEd6TMMqmXb3oQVaMGoCgj2M5\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.21 < 0.7.0;\n\ninterface IUniswapV2Factory {\n    event PoolCreated(address indexed underlyingAddress, address Pool, uint allPools);\n\n    function feeTo() external view returns (address);\n    function feeToSetter() external view returns (address);\n\n    function getPool(address _underlyingAddress) external view returns (address Pool);\n    function allPools(uint) external view returns (address Pool);\n    function allPoolsLength() external view returns (uint);\n\n    function createPool(address _underlyingAddress, address _underlyingAcceptedCurrency) external returns (address Pool);\n\n    function setFeeTo(address) external;\n    function setFeeToSetter(address) external;\n}",
+  "sourcePath": "/home/c/ethcommunity/league-of-pools/contracts/interfaces/ILOPFactory.sol",
+  "ast": {
+    "absolutePath": "/home/c/ethcommunity/league-of-pools/contracts/interfaces/ILOPFactory.sol",
+    "exportedSymbols": {
+      "IUniswapV2Factory": [
+        1112
+      ]
+    },
+    "id": 1113,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1055,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:9"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1112,
+        "linearizedBaseContracts": [
+          1112
+        ],
+        "name": "IUniswapV2Factory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1063,
+            "name": "PoolCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1062,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1057,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "underlyingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1063,
+                  "src": "87:33:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1056,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "87:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1059,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1063,
+                  "src": "122:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1058,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "122:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1061,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "allPools",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1063,
+                  "src": "136:13:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1060,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "136:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "86:64:9"
+            },
+            "src": "69:82:9"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "017e7e58",
+            "id": 1068,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "feeTo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1064,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "171:2:9"
+            },
+            "returnParameters": {
+              "id": 1067,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1066,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1068,
+                  "src": "197:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1065,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "196:9:9"
+            },
+            "scope": 1112,
+            "src": "157:49:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "094b7415",
+            "id": 1073,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "feeToSetter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1069,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "231:2:9"
+            },
+            "returnParameters": {
+              "id": 1072,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1071,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1073,
+                  "src": "257:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1070,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "257:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "256:9:9"
+            },
+            "scope": 1112,
+            "src": "211:55:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "bbe4f6db",
+            "id": 1080,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1076,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1075,
+                  "mutability": "mutable",
+                  "name": "_underlyingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1080,
+                  "src": "289:26:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1074,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "289:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "288:28:9"
+            },
+            "returnParameters": {
+              "id": 1079,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1078,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1080,
+                  "src": "340:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1077,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "340:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "339:14:9"
+            },
+            "scope": 1112,
+            "src": "272:82:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "41d1de97",
+            "id": 1087,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allPools",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1082,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1087,
+                  "src": "377:4:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1081,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "377:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "376:6:9"
+            },
+            "returnParameters": {
+              "id": 1086,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1085,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1087,
+                  "src": "406:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "406:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:14:9"
+            },
+            "scope": 1112,
+            "src": "359:61:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "efde4e64",
+            "id": 1092,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allPoolsLength",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1088,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "448:2:9"
+            },
+            "returnParameters": {
+              "id": 1091,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1090,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1092,
+                  "src": "474:4:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1089,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "474:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "473:6:9"
+            },
+            "scope": 1112,
+            "src": "425:55:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "e3433615",
+            "id": 1101,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1097,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1094,
+                  "mutability": "mutable",
+                  "name": "_underlyingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1101,
+                  "src": "506:26:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1093,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1096,
+                  "mutability": "mutable",
+                  "name": "_underlyingAcceptedCurrency",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1101,
+                  "src": "534:35:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1095,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "534:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:65:9"
+            },
+            "returnParameters": {
+              "id": 1100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1099,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1101,
+                  "src": "589:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1098,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "589:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "588:14:9"
+            },
+            "scope": 1112,
+            "src": "486:117:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f46901ed",
+            "id": 1106,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFeeTo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1104,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1103,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1106,
+                  "src": "627:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1102,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "627:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "626:9:9"
+            },
+            "returnParameters": {
+              "id": 1105,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "644:0:9"
+            },
+            "scope": 1112,
+            "src": "609:36:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "a2e74af6",
+            "id": 1111,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFeeToSetter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1108,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1111,
+                  "src": "674:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1107,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "674:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "673:9:9"
+            },
+            "returnParameters": {
+              "id": 1110,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "691:0:9"
+            },
+            "scope": 1112,
+            "src": "650:42:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1113,
+        "src": "35:659:9"
+      }
+    ],
+    "src": "0:694:9"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/c/ethcommunity/league-of-pools/contracts/interfaces/ILOPFactory.sol",
+    "exportedSymbols": {
+      "IUniswapV2Factory": [
+        1112
+      ]
+    },
+    "id": 1113,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1055,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:9"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1112,
+        "linearizedBaseContracts": [
+          1112
+        ],
+        "name": "IUniswapV2Factory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1063,
+            "name": "PoolCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1062,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1057,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "underlyingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1063,
+                  "src": "87:33:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1056,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "87:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1059,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1063,
+                  "src": "122:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1058,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "122:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1061,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "allPools",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1063,
+                  "src": "136:13:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1060,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "136:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "86:64:9"
+            },
+            "src": "69:82:9"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "017e7e58",
+            "id": 1068,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "feeTo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1064,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "171:2:9"
+            },
+            "returnParameters": {
+              "id": 1067,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1066,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1068,
+                  "src": "197:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1065,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "196:9:9"
+            },
+            "scope": 1112,
+            "src": "157:49:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "094b7415",
+            "id": 1073,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "feeToSetter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1069,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "231:2:9"
+            },
+            "returnParameters": {
+              "id": 1072,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1071,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1073,
+                  "src": "257:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1070,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "257:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "256:9:9"
+            },
+            "scope": 1112,
+            "src": "211:55:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "bbe4f6db",
+            "id": 1080,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1076,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1075,
+                  "mutability": "mutable",
+                  "name": "_underlyingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1080,
+                  "src": "289:26:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1074,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "289:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "288:28:9"
+            },
+            "returnParameters": {
+              "id": 1079,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1078,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1080,
+                  "src": "340:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1077,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "340:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "339:14:9"
+            },
+            "scope": 1112,
+            "src": "272:82:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "41d1de97",
+            "id": 1087,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allPools",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1082,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1087,
+                  "src": "377:4:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1081,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "377:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "376:6:9"
+            },
+            "returnParameters": {
+              "id": 1086,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1085,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1087,
+                  "src": "406:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "406:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:14:9"
+            },
+            "scope": 1112,
+            "src": "359:61:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "efde4e64",
+            "id": 1092,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allPoolsLength",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1088,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "448:2:9"
+            },
+            "returnParameters": {
+              "id": 1091,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1090,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1092,
+                  "src": "474:4:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1089,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "474:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "473:6:9"
+            },
+            "scope": 1112,
+            "src": "425:55:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "e3433615",
+            "id": 1101,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1097,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1094,
+                  "mutability": "mutable",
+                  "name": "_underlyingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1101,
+                  "src": "506:26:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1093,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1096,
+                  "mutability": "mutable",
+                  "name": "_underlyingAcceptedCurrency",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1101,
+                  "src": "534:35:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1095,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "534:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:65:9"
+            },
+            "returnParameters": {
+              "id": 1100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1099,
+                  "mutability": "mutable",
+                  "name": "Pool",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1101,
+                  "src": "589:12:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1098,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "589:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "588:14:9"
+            },
+            "scope": 1112,
+            "src": "486:117:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f46901ed",
+            "id": 1106,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFeeTo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1104,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1103,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1106,
+                  "src": "627:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1102,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "627:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "626:9:9"
+            },
+            "returnParameters": {
+              "id": 1105,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "644:0:9"
+            },
+            "scope": 1112,
+            "src": "609:36:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "a2e74af6",
+            "id": 1111,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFeeToSetter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1108,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1111,
+                  "src": "674:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1107,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "674:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "673:9:9"
+            },
+            "returnParameters": {
+              "id": 1110,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "691:0:9"
+            },
+            "scope": 1112,
+            "src": "650:42:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1113,
+        "src": "35:659:9"
+      }
+    ],
+    "src": "0:694:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.7+commit.b8d736ae.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-05-14T15:30:59.801Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

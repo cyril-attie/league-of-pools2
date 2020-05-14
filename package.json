@@ -1,0 +1,35 @@
+{
+  "name": "league-of-pools",
+  "version": "0.0.0",
+  "description": "DeFi gateway game",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyril-attie/league-of-pools.git"
+  },
+  "keywords": [
+    "Aave",
+    "Portis",
+    "Solidity",
+    "Ethereum",
+    "Truffle"
+  ],
+  "author": "Cyril and Pabel",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/cyril-attie/league-of-pools/issues"
+  },
+  "homepage": "https://github.com/cyril-attie/league-of-pools#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.0.1",
+    "@truffle/hdwallet-provider": "^1.0.35",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.25"
+  }
+}
