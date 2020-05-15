@@ -6,21 +6,23 @@ const { lpContract, lpAddressProviderAddress } = require('./helpers/aaveHelper')
 //     expectRevert, // Assertions for transactions that should fail
 // } = require('@openzeppelin/test-helpers');
 
-var LOPPoolFactory = artifacts.require("./LOPPoolFactory.sol");
-var AaveFactory = artifacts.require("./LOPPoolTemplates/aave/AaveFactory.sol");
+var LOPPoolFactory = artifacts.require("LOPPoolFactory");
+var AaveFactory = artifacts.require("AaveFactory");
 
 contract('LOPPoolFactory', async(accounts) => {
-
     const aaveId = web3.utils.fromAscii("aave");
-    const factory = await LOPPoolFactory.deployed();
 
     before(async() => {
+        let factory = await LOPPoolFactory.deployed();
+        console.log(factory.address);
+        console.log(lpContract.address);
         let reserves = await lpContract.methods
             .getReserves()
             .call()
             .catch((e) => {
                 throw Error(`Error depositing to the LendingPool contract: ${e.message}`)
             });
+
         console.log(`Reserves are :${reserves}`);
         console.log(`aaveId is type ${typeof aaveId}`);
     });

@@ -21,25 +21,26 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.7+commit.b8d736ae\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_underlyingAcceptedCurrency\",\"type\":\"address\"}],\"name\":\"createPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"newPoolAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IPoolProviderFactory.sol\":\"IPoolProviderFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/IPoolProviderFactory.sol\":{\"keccak256\":\"0x681d6e4723686dc7b8887e3466503c3ad5c00ddc5461021d38eeb5e9a4b32e4c\",\"urls\":[\"bzz-raw://fc1d94f2b05c47fa5c8b30bdc02f81c5b6eecf5c4d4cbb7c71eb650816969e4e\",\"dweb:/ipfs/QmTDpG4vPPbEFKHW54dceVkttyrLTpBpYxMoxJ45A2QK7d\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.7+commit.b8d736ae\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_underlyingAcceptedCurrency\",\"type\":\"address\"}],\"name\":\"createPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"newPoolAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/c/ethcommunity/league-of-pools/contracts/interfaces/IPoolProviderFactory.sol\":\"IPoolProviderFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/c/ethcommunity/league-of-pools/contracts/interfaces/IPoolProviderFactory.sol\":{\"keccak256\":\"0x681d6e4723686dc7b8887e3466503c3ad5c00ddc5461021d38eeb5e9a4b32e4c\",\"urls\":[\"bzz-raw://fc1d94f2b05c47fa5c8b30bdc02f81c5b6eecf5c4d4cbb7c71eb650816969e4e\",\"dweb:/ipfs/QmTDpG4vPPbEFKHW54dceVkttyrLTpBpYxMoxJ45A2QK7d\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
+  "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity >=0.4.21 <0.7.0;\n\ninterface IPoolProviderFactory {\n    function createPool(address _underlyingAcceptedCurrency) external returns (address newPoolAddress);\n}",
-  "sourcePath": "contracts/interfaces/IPoolProviderFactory.sol",
+  "sourcePath": "/home/c/ethcommunity/league-of-pools/contracts/interfaces/IPoolProviderFactory.sol",
   "ast": {
-    "absolutePath": "contracts/interfaces/IPoolProviderFactory.sol",
+    "absolutePath": "/home/c/ethcommunity/league-of-pools/contracts/interfaces/IPoolProviderFactory.sol",
     "exportedSymbols": {
       "IPoolProviderFactory": [
-        3141
+        1147
       ]
     },
-    "id": 3142,
+    "id": 1148,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3133,
+        "id": 1139,
         "literals": [
           "solidity",
           ">=",
@@ -50,7 +51,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:25"
+        "src": "0:32:11"
       },
       {
         "abstract": false,
@@ -59,9 +60,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3141,
+        "id": 1147,
         "linearizedBaseContracts": [
-          3141
+          1147
         ],
         "name": "IPoolProviderFactory",
         "nodeType": "ContractDefinition",
@@ -70,7 +71,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "9049f9d2",
-            "id": 3140,
+            "id": 1146,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -78,18 +79,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 3136,
+              "id": 1142,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3135,
+                  "id": 1141,
                   "mutability": "mutable",
                   "name": "_underlyingAcceptedCurrency",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3140,
-                  "src": "91:35:25",
+                  "scope": 1146,
+                  "src": "91:35:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -97,10 +98,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3134,
+                    "id": 1140,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "91:7:25",
+                    "src": "91:7:11",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -111,21 +112,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "90:37:25"
+              "src": "90:37:11"
             },
             "returnParameters": {
-              "id": 3139,
+              "id": 1145,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3138,
+                  "id": 1144,
                   "mutability": "mutable",
                   "name": "newPoolAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3140,
-                  "src": "146:22:25",
+                  "scope": 1146,
+                  "src": "146:22:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -133,10 +134,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3137,
+                    "id": 1143,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "146:7:25",
+                    "src": "146:7:11",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -147,33 +148,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "145:24:25"
+              "src": "145:24:11"
             },
-            "scope": 3141,
-            "src": "71:99:25",
+            "scope": 1147,
+            "src": "71:99:11",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 3142,
-        "src": "34:138:25"
+        "scope": 1148,
+        "src": "34:138:11"
       }
     ],
-    "src": "0:172:25"
+    "src": "0:172:11"
   },
   "legacyAST": {
-    "absolutePath": "contracts/interfaces/IPoolProviderFactory.sol",
+    "absolutePath": "/home/c/ethcommunity/league-of-pools/contracts/interfaces/IPoolProviderFactory.sol",
     "exportedSymbols": {
       "IPoolProviderFactory": [
-        3141
+        1147
       ]
     },
-    "id": 3142,
+    "id": 1148,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3133,
+        "id": 1139,
         "literals": [
           "solidity",
           ">=",
@@ -184,7 +185,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:25"
+        "src": "0:32:11"
       },
       {
         "abstract": false,
@@ -193,9 +194,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3141,
+        "id": 1147,
         "linearizedBaseContracts": [
-          3141
+          1147
         ],
         "name": "IPoolProviderFactory",
         "nodeType": "ContractDefinition",
@@ -204,7 +205,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "9049f9d2",
-            "id": 3140,
+            "id": 1146,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -212,18 +213,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 3136,
+              "id": 1142,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3135,
+                  "id": 1141,
                   "mutability": "mutable",
                   "name": "_underlyingAcceptedCurrency",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3140,
-                  "src": "91:35:25",
+                  "scope": 1146,
+                  "src": "91:35:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -231,10 +232,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3134,
+                    "id": 1140,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "91:7:25",
+                    "src": "91:7:11",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -245,21 +246,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "90:37:25"
+              "src": "90:37:11"
             },
             "returnParameters": {
-              "id": 3139,
+              "id": 1145,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3138,
+                  "id": 1144,
                   "mutability": "mutable",
                   "name": "newPoolAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3140,
-                  "src": "146:22:25",
+                  "scope": 1146,
+                  "src": "146:22:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -267,10 +268,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3137,
+                    "id": 1143,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "146:7:25",
+                    "src": "146:7:11",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -281,28 +282,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "145:24:25"
+              "src": "145:24:11"
             },
-            "scope": 3141,
-            "src": "71:99:25",
+            "scope": 1147,
+            "src": "71:99:11",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 3142,
-        "src": "34:138:25"
+        "scope": 1148,
+        "src": "34:138:11"
       }
     ],
-    "src": "0:172:25"
+    "src": "0:172:11"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.7+commit.b8d736ae.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2020-05-14T15:30:59.803Z",
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-14T18:10:46.593Z",
   "devdoc": {
     "methods": {}
   },

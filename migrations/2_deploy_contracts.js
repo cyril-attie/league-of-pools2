@@ -2,11 +2,11 @@ require('dotenv');
 const fs = require('fs');
 const ethers = require('ethers');
 
-var LOPPoolFactory = artifacts.require("./LOPPoolFactory.sol");
-var AaveFactory = artifacts.require("./LOPPoolTemplates/aave/AaveFactory.sol");
-var ProviderConfig = artifacts.require("./LOPPoolTemplates/TemplatesConfig.sol");
+var LOPPoolFactory = artifacts.require("LOPPoolFactory");
+var AaveFactory = artifacts.require("AaveFactory");
+var TemplatesConfig = artifacts.require("TemplatesConfig");
 
-let batchManagerBuild = require('../build/contracts/LOPPoolFactory.json');
+
 
 module.exports = async(deployer, network, accounts) => {
     /*  console.log('Trying to load mnemonic...');
@@ -25,7 +25,7 @@ module.exports = async(deployer, network, accounts) => {
         accounts.map((account, i) => console.log(`(${i}) ${account}`));
     } */
     await deployer.deploy(LOPPoolFactory);
-    await deployer.deploy(ProviderConfig);
-    await deployer.deploy(AaveFactory, ProviderConfig.address);
+    await deployer.deploy(TemplatesConfig);
+    await deployer.deploy(AaveFactory, TemplatesConfig.address);
 
 };
