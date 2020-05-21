@@ -38,7 +38,7 @@ contract LOPPoolFactory is Ownable {
     function createPool(
         bytes32 _poolProvider,
         address _underlyingAddress,
-        address _underlyingAcceptedCurrency 
+        address _underlyingAcceptedCurrency
     ) external onlyOwner returns (address pool) {
         require(
             _underlyingAddress != address(0),
