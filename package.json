@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/cyril-attie/league-of-pools#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^3.0.1",
+    "@openzeppelin/contracts": "^4.7.2",
     "@truffle/hdwallet-provider": "^1.0.35",
     "dotenv": "^8.2.0",
     "truffle": "^5.1.25"
